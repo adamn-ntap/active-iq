@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>active-iq</title>
+    <atom:link href="https://docs.netapp.com/active-iq/us-en/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://docs.netapp.com/active-iq/us-en</link>
+    <description>The latest updates from NetApp Cloud Docs</description>
+    <language>en-us</language>
+    <ttl>60</ttl>
+    <pubDate>Sat, 29 Feb 2020 17:39:25 +0000</pubDate>
+    <lastBuildDate>Sat, 29 Feb 2020 17:39:25 +0000</lastBuildDate>
+    
+  </channel>
+</rss>

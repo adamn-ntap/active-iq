@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+    
+    
+  
+
+  
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/AFF_SE_calculator.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_aiq_AFF_SE_appendix.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_aiq_AFF_SE_overview.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_aiq_mrug_accessing_reports.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_aiq_mrug_configuration_report.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_aiq_mrug_create_report.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_aiq_mrug_custom_group.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_aiq_mrug_report_scheduling.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_aiq_mrug_reports_dashboard.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_aiq_mrug_reports_overview.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_aiq_ug_copyright.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_aiq_ug_getting_started.html</loc>
+      
+      <lastmod>2020-02-29T16:46:20+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/reference_legalnotices.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_aiq_value_report.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_get_more_information.html</loc>
+      
+      <lastmod>2020-02-19T09:51:16+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_getting_started_2.html</loc>
+      
+      <lastmod>2020-02-26T09:12:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_key_terms.html</loc>
+      
+      <lastmod>2020-02-26T09:12:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html</loc>
+      
+      <lastmod>2020-02-19T06:55:48+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_overview_wellness_score.html</loc>
+      
+      <lastmod>2020-02-19T09:51:16+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_api_api_catlog.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_api_code_example1.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_api_code_example2.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_api_services.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_autosupport_alert.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_autosupport_viewer.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_cluster_dashboard.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_cluster_viewer.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_config_compare_popular_temp.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_customer_dashboard.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_customer_my_systems.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_datacenter_view.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_discovery_dashboard.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_fabricpool.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_flash_advisor.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_hci_expansion_advisor.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_health.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_interop_advisor.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_manual_autosupport_upload.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_performance.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_performance_guarantee_bpg.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_protection_advisor.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_reports.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_storage.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_storage_eff_peer_comparison.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_system_dashboard.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_upgrade_advisor.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_watchlists.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/concept_ug_workload_tagging.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/</loc>
+      
+      <lastmod>2020-01-17T09:09:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/reference_aiq_AFF_SE_FAQs.html</loc>
+      
+      <lastmod>2020-01-22T13:11:42+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/reference_aiq_api_FAQ.html</loc>
+      
+      <lastmod>2020-01-24T07:23:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/reference_aiq_api_FAQ.html</loc>
+      
+      <lastmod>2019-07-03T05:14:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/reference_aiq_srd_health_summary.html</loc>
+      
+      <lastmod>2020-01-22T13:11:42+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/reference_aiq_srd_reporting_mitigation.html</loc>
+      
+      <lastmod>2020-01-22T13:11:42+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/reference_legalnotices.html</loc>
+      
+      <lastmod>2019-03-15T10:19:09+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/reference_limitations_activeiq.html</loc>
+      
+      <lastmod>2020-02-26T09:12:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/reference_new_activeiq.html</loc>
+      
+      <lastmod>2020-02-19T06:55:48+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq//search.html</loc>
+      
+      <lastmod>2020-02-29T17:37:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html</loc>
+      
+      <lastmod>2020-02-19T06:55:48+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/task_login_activeiq.html</loc>
+      
+      <lastmod>2020-02-19T09:51:16+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/task_renew_software_and_hardware.html</loc>
+      
+      <lastmod>2020-01-28T14:21:07+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/task_ug_api_accessing_api_services.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/task_ug_api_generating_tokens.html</loc>
+      
+      <lastmod>2020-01-22T09:55:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/task_view_risk_and_acknowledge.html</loc>
+      
+      <lastmod>2020-02-19T09:51:16+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/active-iq/task_view_risks_remediated_unified_manager.html</loc>
+      
+      <lastmod>2020-02-19T09:51:16+00:00</lastmod>
+      
+    </url>
+  
+
+  
+  
+</urlset>

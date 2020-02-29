@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+  <title>Health</title>
+  <meta charset="utf-8">
+  <meta property="og:title" content="Health" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/active-iq/us-en/concept_ug_health.html" />
+	<meta property="og:description" content="Provides an overview of the health feature." />
+  <meta property="og:image" content="https://docs.netapp.com/active-iq/us-en/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/>
+  
+  <meta name="description" content="Provides an overview of the health feature.">
+  <meta name="keywords" content=" Active IQ, user guide, health">
+  
+  
+
+  <!-- Icons -->
+  <link rel="icon" href="/active-iq/us-en/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed -->
+  
+
+  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- LUCI CSS Content -->
+  <link rel="stylesheet" href="/active-iq/us-en/common/css/esb.min.css">
+  <link rel="stylesheet" href="/active-iq/us-en/common/css/netapp-library.min.css">
+  <link rel="stylesheet" href="/active-iq/us-en/common/css/doc.css">
+  <link rel="stylesheet" href="/active-iq/us-en/common/css/doc-components.css">
+
+  <link rel="stylesheet" href='/active-iq/us-en/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/active-iq/us-en/css/na-search.css' type='text/css'>
+  <link rel='stylesheet' href='/active-iq/us-en/css/clouddocs.css' type='text/css'>
+
+  <!-- Font awesome seems to affect our GitHub Icon and generic "arrow box" for external links. -->
+  <link rel="stylesheet" type="text/css" href="/active-iq/us-en/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="/active-iq/us-en/css/customstyles.css"> -->
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/active-iq/us-en/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel='stylesheet' href='/active-iq/us-en/css/netapp.css' type='text/css'>
+
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+  
+    <script src='/active-iq/us-en/js/na-search.js'></script>
+  
+
+  
+  <link rel='stylesheet' href='/active-iq/us-en/css/na-pagenav.css' type='text/css' id="pagenav-css">
+  <script src='/active-iq/us-en/js/na-pagenav.js'></script>
+  
+
+  <link rel='stylesheet' href='/active-iq/us-en/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/active-iq/us-en/css/prism-netapp.css' type='text/css'>
+
+  <script src='/active-iq/us-en/js/clouddocs.js'></script>
+  <script src='/active-iq/us-en/js/s_code_impl.js'></script>
+  <script src='/active-iq/us-en/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/active-iq/us-en/js/toc.js'></script>
+  <script src='/active-iq/us-en/js/customscripts.js'></script>
+
+  <script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script>
+
+  <!-- Controls the i18n Browser Redirection -->
+  <script>
+    var siteLocales = [];
+    
+      siteLocales.push("us-en");
+    
+
+    standardizeUrl(siteLocales, "clouddocs.netapp.com", "https://docs.netapp.com");
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+</head>
+
+
+  <body class="n-doc__component-detail">
+    <a href="#n-main-content" class="visually-hidden">Skip to main content</a>
+<div class="n-off-canvas-menu">
+  <div class="n-off-canvas-menu__menu">
+    <div class="n-off-canvas-menu__menu-inner">
+      <div class="n-off-canvas-menu__property-title"></div>
+      <ul class="n-off-canvas-menu__property-navigation-list">
+        <li class="n-off-canvas-menu__property-navigation-list-item ">
+          <a href="https://docs.netapp.com/us-en/" class="n-off-canvas-menu__property-navigation-link">
+            Home
+          </a>
+          <div class="n-off-canvas-menu__child-menu">
+            <ul class="n-menu__list">
+
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="n-off-canvas-menu__global-navigation-list">
+         <li class="n-off-canvas-menu__global-navigation-list-header">More From NetApp</li>
+         <li class="n-off-canvas-menu__global-navigation-list-item"><a href="#" class="n-off-canvas-menu__global-navigation-link">Netapp.com</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="n-off-canvas-menu__content-wrap">
+      <!-- Header -->
+      <header>
+  <!-- Top Hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+            <li class="n-top-hat__list-item">
+              <a href="http://www.netapp.com" class="n-top-hat__link">NetApp.com</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Property Bar -->
+  <div class="n-property-bar n-property-bar--v3">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link"><span class="n-property-bar__menu-toggle-text">Menu</span><svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+          <title>bars</title>
+          <use xlink:href="/active-iq/us-en/common/svg/sprite.svg#bars"></use>
+        </svg></a>
+      </div>
+      <div class="n-property-bar__property-mark n-property-bar__property-mark--has-property-name">
+        <a class="n-property-bar__property-link" href="https://docs.netapp.com">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/active-iq/us-en/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-property-bar__logo-svg" aria-labelledby="title">
+              <title>NetApp</title>
+              <use xlink:href="/active-iq/us-en/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+          <h2 class="n-property-bar__property-name"></h2>
+        </a>
+      </div>
+
+      
+      <div id="search-demo-container" class="n-property-bar__search">
+        <div id="react-search"></div>
+      </div>
+      
+
+      <div id="ie-i18n" class="n-property-bar__utils">
+        <div id="ie-i18n-menu">
+          <ul class="n-property-navigation-bar__utils-list">
+            <li class="n-property-navigation-bar__utils-list-item ie-i18n-container">
+              <a href="#" class="n-property-navigation-bar__utils-link n-property-navigation-bar__nav-link n-property-navigation-bar__language-selector-toggle ie-i18n-link" data-menu-id="n-property-navigation-bar__menu--language-selector">
+                <span class="ie-i18n-lang">English</span>
+                <svg class="ie-i18n-icon-container" class="n-property-bar__logo-svg" aria-labelledby="title">
+                  <title>globe</title>
+                  <use xlink:href="/active-iq/us-en/common/svg/sprite.svg#globe" class="n-icon-globe n-globe__icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="n-property-bar__menus">
+      <div id="n-property-navigation-bar__menu--language-selector" class="n-menu n-menu--v3">
+        <div class="n-language-selector-menu">
+          <div class="n-language-selector-menu__header">
+            <span class="n-language-selector-menu__title">Select Your Language</span>
+          </div>
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list">
+                
+                
+                
+                <li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="/active-iq/us-en/" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+              </ul>
+            </li>
+          </ul>
+          <div class="menu__footer">
+            <p>Current Language: English
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <!-- Content -->
+      <main role="main" id="n-main-content" class="n-main-content">
+        
+<div class="n-container">
+  <div class="n-row">
+    <div class="n-doc n-doc__component-list">
+      <!-- Sidebar Column -->
+      
+      <div class="col-md-3" >
+          
+
+<ul id="mysidebar" class="nav">
+  
+
+  
+    <li><a href="index.html">Active IQ Documentation</a></li>
+  
+
+  
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">Active IQ</a>
+      <ul>
+        
+
+  
+    <li><a href="concept_aiq_ug_getting_started.html">Getting started</a></li>
+  
+
+  
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">Features</a>
+      <ul>
+        
+
+  
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">API Services</a>
+      <ul>
+        
+
+  
+    <li><a href="concept_ug_api_services.html">Overview</a></li>
+  
+
+  
+    <li><a href="task_ug_api_accessing_api_services.html">Gaining access</a></li>
+  
+
+  
+    <li><a href="task_ug_api_generating_tokens.html">Tokens</a></li>
+  
+
+  
+    <li><a href="concept_ug_api_api_catlog.html">API catalog</a></li>
+  
+
+  
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">Code examples</a>
+      <ul>
+        
+
+  
+    <li><a href="concept_ug_api_code_example1.html">Example 1 - getAccessToken</a></li>
+  
+
+  
+    <li><a href="concept_ug_api_code_example2.html">Example 2 - getEfficiencySummaryByLevel</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+    <li><a href="reference_aiq_api_FAQ.html">FAQ</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+    <li><a href="concept_ug_manual_autosupport_upload.html">AutoSupport Upload</a></li>
+  
+
+  
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">Cluster</a>
+      <ul>
+        
+
+  
+    <li><a href="concept_ug_cluster_dashboard.html">Dashboard</a></li>
+  
+
+  
+    <li><a href="concept_ug_performance.html">Performance</a></li>
+  
+
+  
+    <li><a href="concept_ug_upgrade_advisor.html">Upgrade Advisor</a></li>
+  
+
+  
+    <li><a href="concept_ug_autosupport_viewer.html">AutoSupport</a></li>
+  
+
+  
+    <li class="active"><a href="concept_ug_health.html">Health</a></li>
+  
+
+  
+    <li><a href="concept_ug_storage_eff_peer_comparison.html">Storage</a></li>
+  
+
+  
+    <li><a href="concept_ug_workload_tagging.html">Workload</a></li>
+  
+
+  
+    <li><a href="concept_ug_cluster_viewer.html">Configuration</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">Customer</a>
+      <ul>
+        
+
+  
+    <li><a href="concept_ug_customer_dashboard.html">Dashboard</a></li>
+  
+
+  
+    <li><a href="concept_aiq_value_report.html">Value report</a></li>
+  
+
+  
+    <li><a href="concept_ug_customer_my_systems.html">My systems</a></li>
+  
+
+  
+    <li><a href="concept_ug_upgrade_advisor.html">Upgrade Advisor</a></li>
+  
+
+  
+    <li><a href="concept_ug_autosupport_alert.html">AutoSupport alerts</a></li>
+  
+
+  
+    <li class="active"><a href="concept_ug_health.html">Health</a></li>
+  
+
+  
+    <li><a href="concept_ug_interop_advisor.html">Interop Advisor</a></li>
+  
+
+  
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">Advisories</a>
+      <ul>
+        
+
+  
+    <li><a href="concept_ug_flash_advisor.html">Flash Advisor</a></li>
+  
+
+  
+    <li><a href="concept_ug_protection_advisor.html">Protection Advisor</a></li>
+  
+
+  
+    <li><a href="concept_ug_fabricpool.html">FabricPool Advisor</a></li>
+  
+
+  
+    <li><a href="concept_ug_performance_guarantee_bpg.html">Performance Guarantee Best Practice Gaps</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+    <li><a href="concept_ug_config_compare_popular_temp.html">Config Compare</a></li>
+  
+
+  
+    <li><a href="concept_ug_datacenter_view.html">DataCenter View (Beta)</a></li>
+  
+
+  
+    <li><a href="concept_ug_storage.html">Storage</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+    <li><a href="concept_ug_discovery_dashboard.html">Discovery Dashboard</a></li>
+  
+
+  
+    <li><a href="concept_ug_hci_expansion_advisor.html">HCI Expansion Advisor</a></li>
+  
+
+  
+    <li><a href="concept_ug_reports.html">Reports</a></li>
+  
+
+  
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">System</a>
+      <ul>
+        
+
+  
+    <li><a href="concept_ug_system_dashboard.html">Dashboard</a></li>
+  
+
+  
+    <li><a href="concept_ug_autosupport_viewer.html">AutoSupport</a></li>
+  
+
+  
+    <li class="active"><a href="concept_ug_health.html">Health</a></li>
+  
+
+  
+    <li><a href="concept_ug_performance.html">Performance</a></li>
+  
+
+  
+    <li><a href="concept_ug_storage_eff_peer_comparison.html">Storage</a></li>
+  
+
+  
+    <li><a href="concept_ug_autosupport_alert.html">AutoSupport Alerts</a></li>
+  
+
+  
+    <li><a href="concept_ug_upgrade_advisor.html">Upgrade Advisor</a></li>
+  
+
+  
+    <li><a href="concept_ug_cluster_viewer.html">Configuration</a></li>
+  
+
+  
+    <li><a href="concept_ug_interop_advisor.html">Interop Advisor</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+    <li><a href="concept_ug_watchlists.html">Watchlists</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">Reports</a>
+      <ul>
+        
+
+  
+    <li><a href="concept_aiq_mrug_reports_overview.html">Reports overview</a></li>
+  
+
+  
+    <li><a href="concept_aiq_mrug_accessing_reports.html">Accessing reports</a></li>
+  
+
+  
+    <li><a href="concept_aiq_mrug_reports_dashboard.html">Reports Dashboard</a></li>
+  
+
+  
+    <li><a href="concept_aiq_mrug_create_report.html">Create report</a></li>
+  
+
+  
+    <li><a href="concept_aiq_mrug_configuration_report.html">Configuration Report Output</a></li>
+  
+
+  
+    <li><a href="concept_aiq_mrug_custom_group.html">Watchlist</a></li>
+  
+
+  
+    <li><a href="concept_aiq_mrug_report_scheduling.html">Report Scheduling</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">FAQs</a>
+      <ul>
+        
+
+  
+    <li><a href="reference_aiq_srd_health_summary.html">Health summary</a></li>
+  
+
+  
+    <li><a href="reference_aiq_srd_reporting_mitigation.html">Reporting and mitigation</a></li>
+  
+
+  
+    <li><a href="reference_aiq_AFF_SE_FAQs.html">AFF Storage Efficiency</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">Active IQ Digital Advisor</a>
+      <ul>
+        
+
+  
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">Release Notes</a>
+      <ul>
+        
+
+  
+    <li><a href="reference_new_activeiq.html">What's new</a></li>
+  
+
+  
+    <li><a href="reference_limitations_activeiq.html">Known limitations</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+    <li><a href="concept_getting_started_2.html">Getting started</a></li>
+  
+
+  
+    <li><a href="concept_key_terms.html">Key Active IQ concepts</a></li>
+  
+
+  
+    <li><a href="task_login_activeiq.html">Log in to Active IQ Digital Advisor</a></li>
+  
+
+  
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">Provision the dashboard</a>
+      <ul>
+        
+
+  
+    <li><a href="concept_overview_dashboard.html">Overview</a></li>
+  
+
+  
+    <li><a href="task_add_watchlist.html">Add a watchlist to the dashboard</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">Analyze the wellness</a>
+      <ul>
+        
+
+  
+    <li><a href="concept_overview_wellness_score.html">Overview</a></li>
+  
+
+  
+    <li><a href="task_view_risk_and_acknowledge.html">View all the risks or the risks associated with the wellness attributes</a></li>
+  
+
+  
+    <li><a href="task_view_risks_remediated_unified_manager.html">View risks that can be automatically remediated using Active IQ Unified Manager</a></li>
+  
+
+  
+    <li><a href="task_renew_software_and_hardware.html">Renew the software and hardware of your storage system</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">Identify system requriements proactively</a>
+      <ul>
+        
+
+  
+    <li><a href="task_renew_software_and_hardware.html">Renew the software and hardware of your storage system</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+    <li><a href="concept_get_more_information.html">Get more information</a></li>
+  
+
+  
+    <li><a href="reference_legalnotices.html">Notices</a></li>
+  
+
+
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+      </div>
+      
+
+      <div class="n-doc__component-detail-content n-doc__component-detail-content--show-code">
+        <!-- Begin of page container -->
+        <article class="page-content">
+          
+
+
+
+<div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Health
+    <span>
+      
+        <a target="_blank" href="https://github.com/NetAppDocs/active-iq/blob/master/ActiveIQ1.0/concept_ug_health.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/active-iq/issues/new?body=Page%3A%20[Health](https://docs.netapp.com/us-en/active-iq/concept_ug_health.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
+      
+    </span>
+  </h1>
+</div>
+
+<p class="page-details">
+
+<time datetime="2020-01-22 09:55:41 +0000">01/22/2020</time>
+
+
+<span>Contributors
+  
+  <a target="_blank" href="https://github.com/netapp-manishc">
+    <img  class="avatar avatar-small"
+          alt="netapp-manishc"
+          width="20" height="20"
+          src="https://avatars1.githubusercontent.com/u/43026465?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Health tab <span class="image"><img src="./media/UserGuide/image37.png" alt="image" width="29" height="30"></span> contains system risks that identifies configuration or other kinds of issues that may impair system performance, availability, and resilience. Each risk entry contains information about the specific risk, the potential negative impact, and links to mitigation plans for that risk. Addressing these risks proactively can improve your NetApp storage availability.</p>
+</div>
+<div class="paragraph">
+<p>Impact Level Definitions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>High</strong> – High potential of a system outage or data corruption, address immediately. Examples include HA Takeover Impossible and Shutdown Pending.</p>
+</li>
+<li>
+<p><strong>Medium</strong> – May cause system downtime such as a panic. Address as soon as possible.</p>
+</li>
+<li>
+<p><strong>Low</strong> – Minimal impact but should be addressed for increased system stability. Examples include bypass disks present, SnapMirror sync failure, and RSDT not working.</p>
+</li>
+<li>
+<p><strong>Best Practice</strong> – Recommendation defined by a Technical Report (TR) or Knowledge Base (KB) article.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Case Probability analyzes risk data and technical support case data from the last two to three years. Using machine learning determines the likelihood that a technical support case will be opened for the system within 90 days of the risk being detected. This results in determining strong correlation between the first discovery of a risk and whether a case is opened.</p>
+</div>
+<div class="paragraph">
+<p>Using the risk’s impact level and the risk to case confidence value to compute a “Case Probability” score. This score is used to rank the risks present on a system for which risk should be mitigated first.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="security-vulnerability">Security Vulnerability</h3>
+<div class="paragraph">
+<p>The <strong>Security Vulnerability</strong> tab identifies systems with security risks. This tab contains information about the specific risk, the potential negative impact and link to the CVE bulletin.</p>
+</div>
+<div class="paragraph">
+<p>Impact Level Definitions for Security Risks</p>
+</div>
+<div class="paragraph">
+<p>The Impact level for Security Risks is based on the Common Vulnerability Scoring System (CVSS) and noted in the Impact section of the CVE bulletin. The CVSS provides an open framework for communicating the characteristics and impacts of IT vulnerabilities. Its quantitative model ensures repeatable accurate measurement while enabling users to see the underlying vulnerability characteristics that were used to generate the scores. Thus, CVSS is well suited as a standard measurement system for industries, organizations, and governments that need accurate and consistent vulnerability impact scores. For more information, please visit <a href="https://nvd.nist.gov/vuln-metrics/cvss" class="bare">https://nvd.nist.gov/vuln-metrics/cvss</a></p>
+</div>
+<div class="paragraph">
+<p><strong>TIP</strong>: If you would like to receive system risk report on a regular basis, click  <strong>Schedule a Risk Report</strong>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="proactive-remediation">Proactive Remediation</h3>
+<div class="paragraph">
+<p>The <strong>Proactive Remediation</strong> tab lists notification of systemic quality risks that are of high impact and may impair system performance, availability, and resiliency. Each risk entry contains information about the specific risk, systems impacted, and link to remediation recommendations. Risk notifications will be moved to the <strong>Acknowledge System Health</strong> tab post acknowledgement. Addressing these risks proactively at the onset can improve your storage availability. Systemic quality risks that are of high impact and have a high rate of occurrence resulting in potential node or cluster outage or data corruption must be addressed immediately.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="best-practices">Best Practices</h3>
+<div class="paragraph">
+<p>Best practices are available from the Health Summary tab in the left navigation pane and the Fitness quadrant of the Fitness Dashboard. Gaps in best practices are highlighted, and corrective actions are listed for mitigation. Best practices are available at both the system and aggregate levels (customer, site, and group), helping you to standardize your storage environment and enhance its operational efficiency.</p>
+</div>
+<div class="paragraph">
+<p><strong>TIP</strong>: Review Best Practices for checking whether you have implemented Storage Efficiency Best Practices according to NetApp recommendations.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="health-trending">Health Trending</h3>
+<div class="paragraph">
+<p>It is extremely important to mitigate risks in a timely manner to prevent critical issues. The Health Trending feature provides up to a 3-month view of System Risks, Best Practices, and End of Support so that as you mitigate these conditions, you can track the progress with weekly reports. These reports show you a summary of trends and enable you to drill down and analyze individual risks. Trending is available at both single system and customer level. You can download these reports in a PDF format.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="system-risk-acknowledgement">System Risk Acknowledgement</h3>
+<div class="paragraph">
+<p>Use the System Risk Acknowledgement feature to gain the greatest flexibility in managing how risks detected across your systems are displayed on your dashboard. This feature enables you to customize your risk dashboard so that it displays only the risks you deem to be most critical to your environment.</p>
+</div>
+<div class="paragraph">
+<p>Acknowledging a risk is a way of flagging it in your dashboard. Setting your preferences to “Hide Acknowledged Risks” removes the flagged risks from your active default Health Summary view. All acknowledged risks are still viewable from the “Acknowledged System Health” tab.</p>
+</div>
+<div class="paragraph">
+<p><strong>Best Practice:</strong> Complete the “justification” field when you acknowledge a risk to document the rationale behind the acknowledgement.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If you are a NetApp Internal user acknowledging on behalf of a customer with their approval, please add the customer’s name in the “Approved By” field for future reference and trackability.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/UserGuide/image42.png" alt="image" width="450" height="200"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="risk-advisor">Risk Advisor</h3>
+<div class="paragraph">
+<p>By using Risk Advisor, users can see how many risks can be mitigated just by doing an ONTAP upgrade. Only systems that can be upgraded to ONTAP 9.x will be shown.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="community-wisdom">Community Wisdom</h3>
+<div class="paragraph">
+<p>Based on other systems with the same risk that upgraded, Community Wisdom gives the likelihood of the risk being mitigated by upgrading ONTAP along with a level of confidence. This is presented in the last two columns as “Risk present after upgrade” and “% of Risk resolved after ONTAP upgrade” column.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="benefits">Benefits</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Better system availability by lowering risk profile</p>
+</li>
+<li>
+<p>Reduces planning time for upgrades – you know which systems will benefit from upgrade from a single report</p>
+</li>
+<li>
+<p>Additional benefit of newer features in ONTAP 9</p>
+</li>
+<li>
+<p>Your risk mitigation improves the confidence level of our recommendations</p>
+</li>
+</ul>
+</div>
+</div>
+
+
+
+        </article>
+        <!-- Page Container -->
+      </div>
+
+      
+      <div class="page-nav-container">
+        <nav class="page-nav-fixed">
+          <div class="page-nav-title">On this page:</div>
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </nav>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+
+      </main>
+
+      <!-- Footer -->
+      
+      <footer class="n-footer n-footer--v1" style="border-top: solid 10px #DFDFDF;">
+        <div class="n-footer__bottom">
+          <div class="n-container">
+            <div class="n-footer__bottom-left">
+              <div class="n-footer__copyright">
+                  <a href="//www.netapp.com/us/legal/copyright.aspx" class="n-footer__copyright-link">© 2020 NetApp, Inc.</a>
+              </div>
+              <div class="n-footer__copyright">
+                <a href="//www.netapp.com/us/legal/index.aspx" class="n-footer__copyright-link">Legal</a>
+              </div>
+              <div class="n-footer__social-links n-footer__copyright">
+                <ul class="n-footer__social-link-list">
+                  <li class="n-footer__social-link-list-item">
+                    <a class="n-footer__social-link" data-ntap-social="follow-blog" href="http://blog.netapp.com" target="_blank" title="blog" alt="blog">
+                      <span class="n-footer__social-link-text">blog</span>
+                      <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                        <title>blog@</title>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/active-iq/us-en/common/svg/sprite.svg#blog"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="n-footer__social-link-list-item">
+                    <a class="n-footer__social-link" data-ntap-social="follow-community" href="http://community.netapp.com/" target="_blank" title="community" alt="community">
+                      <span class="n-footer__social-link-text">community</span>
+                      <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                        <title>community@</title>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/active-iq/us-en/common/svg/sprite.svg#comments"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="n-footer__social-link-list-item">
+                    <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netappdoc" target="_blank" title="twitter" alt="twitter">
+                      <span class="n-footer__social-link-text">twitter</span>
+                      <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                        <title>twitter@</title>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/active-iq/us-en/common/svg/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="n-footer__social-link-list-item">
+                    <a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTechCommTV/" target="_blank" title="youtube" alt="youtube">
+                      <span class="n-footer__social-link-text">youtube</span>
+                      <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                        <title>youtube@</title>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/active-iq/us-en/common/svg/sprite.svg#youtube"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="n-footer__bottom-right">
+              <div class="n-footer__copyright">
+                <a href="https://docs.netapp.com/us-en/contribute/" class="n-footer__copyright-link">Contribute</a>
+              </div>
+              <div class="n-footer__copyright">
+                <a target="_self" class="n-footer__copyright-link" href="javascript:netapp_mailto()">Email your feedback</a>
+              </div>
+              <div class="n-footer__copyright">
+                <a href="https://docs.netapp.com/us-en/announcements/" class="n-footer__copyright-link">Announcements</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <script src="/active-iq/us-en/common/js/components.js"></script>
+    <script src="/active-iq/us-en/common/js/doc-components.js"></script>
+
+    <!-- Elasticsearch JS -->
+    <script type="text/javascript" src='/active-iq/us-en/js/bundle.js'></script>
+
+    <!-- Syntax Highlighting -->
+    <script type="text/javascript" src='/active-iq/us-en/js/prism.js'></script>
+    <script type="text/javascript" src='/active-iq/us-en/js/prism-curl.js'></script>
+
+  </body>
+
+  
+</html>
+
+
